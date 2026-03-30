@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Muhammad Taimoor</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Muhammad Taimoor</span></h1>
+            <p>Software Engineer | Student at SMI University</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+        <img src="profile.jpeg" alt="Your Photo" class="hero-img">
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi, I'm a tech enthusiast and aspiring full-stack developer studying at SMI University. 
+    I enjoy turning ideas into reality — whether it's building powerful applications with <strong>.NET</strong>, 
+    crafting smooth and elegant mobile experiences using <strong>Flutter</strong>, or creating immersive worlds 
+    with <strong>Unreal Engine</strong> for games.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">.Net developer</div>
+            <div class="skill-card">Mobile App dev with flutter</div>
+            <div class="skill-card">Game dev with Unreal Engine </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name</p>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
